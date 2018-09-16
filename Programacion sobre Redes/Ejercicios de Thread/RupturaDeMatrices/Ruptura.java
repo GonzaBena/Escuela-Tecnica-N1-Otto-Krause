@@ -12,13 +12,13 @@ public class Ruptura extends Thread{
   }
 
   public int getRupt() {
-    return rept;
+    return rupt;
   }
 
   @Override
   public void run() {
     for (int i = this.index; i < this.count-1 ; i++) {
-      if (!array[i]< array[i+1])) {
+      if (!(array[i]< array[i+1])) {
         this.rupt++;
       }
     }
